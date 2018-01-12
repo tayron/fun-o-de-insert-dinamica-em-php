@@ -1,2 +1,37 @@
-# fun-o-de-insert-dinamica-em-php
-FunÃ§Ã£o que monta sql de insert dinamica em PHP
+# Funcao de insert dinamica em PHP
+
+<br /><br />
+
+Sempre que trabalho com sistema legado, vira e mexe praciso criar uma função genérica que 
+gere sql de insert dinamico, baseado em uma lista de dados a serem inseridos. 
+Todas as vezes que preciso acabo criando do zero e desta vez resolvi armazenar e 
+também compartilhar com quem possa precisar.
+
+<br /><br />
+
+Função mysql_real_escape_string foi usada para tratamento de string devido versão 
+atual do PHP, pode ser substituida por outra conforme o ambiente.
+
+<br /><br />
+
+# Uso da função
+```PHP
+$listaDados = array(
+	array('Pedro', '11111'),
+	array('Maria', '22222'),
+	array('Cristina', '33333'),
+	array('Carlos', '44444')
+);
+
+try{
+    echo montarSQLInsert('contato', array('nome', 'telefone'), $listaDados);
+}catch(Exception $e){
+    echo $e->getMessage();
+}
+
+```PHP
+
+<br /><br />
+
+Saida do método abaixo será: <br />
+```INSERT INTO contato (nome, telefone) SET ('nome', 'telefone'), ('nome', 'telefone'), ('nome', 'telefone'), ('nome', 'telefone')```
