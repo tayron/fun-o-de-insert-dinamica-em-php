@@ -34,4 +34,4 @@ try{
 <br />
 
 Saida do método abaixo será: <br />
-```INSERT INTO contato (nome, telefone) VALUES ('nome', 'telefone'), ('nome', 'telefone'), ('nome', 'telefone'), ('nome', 'telefone')```
+```INSERT INTO contato (nome, telefone) VALUES ('Pedro', '11111'), ('Maria', '22222'), ('Cristina', '33333'), ('Carlos', '44444')```

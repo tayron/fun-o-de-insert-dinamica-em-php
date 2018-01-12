@@ -34,7 +34,7 @@ function montarSQLInsert($tabela, array $colunas, array $dados)
 			$item = mysql_real_escape_string($item);
 		}
 
-		$dadoString = implode("', '" , $colunas);        
+		$dadoString = implode("', '" , $dado);        
         
 		$listaDados .= ($listaDados) ? ', ' : null;
 		$listaDados .= "('$dadoString')";
