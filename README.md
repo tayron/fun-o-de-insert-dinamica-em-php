@@ -1,4 +1,4 @@
-# Funcao de insert dinamica em PHP
+# Função de insert dinamica em PHP
 
 <br />
 
