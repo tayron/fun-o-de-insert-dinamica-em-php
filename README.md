@@ -29,7 +29,7 @@ try{
     echo $e->getMessage();
 }
 
-```PHP
+```
 
 <br /><br />
 
