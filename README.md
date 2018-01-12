@@ -1,13 +1,13 @@
 # Funcao de insert dinamica em PHP
 
-<br /><br />
+<br />
 
 Sempre que trabalho com sistema legado, vira e mexe praciso criar uma função genérica que 
 gere sql de insert dinamico, baseado em uma lista de dados a serem inseridos. 
 Todas as vezes que preciso acabo criando do zero e desta vez resolvi armazenar e 
 também compartilhar com quem possa precisar.
 
-<br /><br />
+<br />
 
 Função mysql_real_escape_string foi usada para tratamento de string devido versão 
 atual do PHP, pode ser substituida por outra conforme o ambiente.
@@ -31,7 +31,7 @@ try{
 
 ```
 
-<br /><br />
+<br />
 
 Saida do método abaixo será: <br />
 ```INSERT INTO contato (nome, telefone) SET ('nome', 'telefone'), ('nome', 'telefone'), ('nome', 'telefone'), ('nome', 'telefone')```
