@@ -33,11 +33,12 @@ function montarSQLInsert($tabela, array $colunas, array $dados)
 		foreach($dado as &$item){
 			$item = mysql_real_escape_string($item);
 		}
-		
-		$dadoString = implode("', '" , $colunas); 
+
+		$dadoString = implode("', '" , $colunas);        
+        
 		$listaDados .= ($listaDados) ? ', ' : null;
 		$listaDados .= "('$dadoString')";
 	}
 	
-	return "INSERT INTO $tabela ($listaColunas) SET $listaDados";
+	return "INSERT INTO $tabela ($listaColunas) VALUES $listaDados";
 }
