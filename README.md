@@ -34,4 +34,4 @@ try{
 <br />
 
 Saida do método abaixo será: <br />
-```INSERT INTO contato (nome, telefone) SET ('nome', 'telefone'), ('nome', 'telefone'), ('nome', 'telefone'), ('nome', 'telefone')```
+```INSERT INTO contato (nome, telefone) VALUES ('nome', 'telefone'), ('nome', 'telefone'), ('nome', 'telefone'), ('nome', 'telefone')```
